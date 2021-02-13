@@ -24,6 +24,10 @@ main {
   flex-wrap: wrap;
 }
 
+div {
+  display: block;
+}
+
 section {
   height: 300px;
   width: 200px;
@@ -52,4 +56,43 @@ section span:nth-of-type(3) {
   height: 100px;
   width: 100px;
   border: 1px solid #000;
+}
+
+button {
+  border: solid black 3px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+}
+
+::placeholder {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+input {
+  height: 2rem;
+  width: 20%;
+}
+
+.inputs input {
+  margin: 2rem;
+}
+
+#reset {
+  width: auto;
+  height: 70px;
+  font-size: 30px;
+  justify-content: center;
 }

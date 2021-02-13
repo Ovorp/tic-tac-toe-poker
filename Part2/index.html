@@ -5,14 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Styles</title>
     <link rel="stylesheet" href="./index.css" />
+    <script defer src="/Part2/index.js"></script>
   </head>
-<body>
-  <header><h1>Poker Cards</h1></header>
+  <body>
+    <header><h1>Poker Cards</h1></header>
+    <div class="inputs">
+      <input type="text" placeholder="Suit" id="card-id" />
+      <input type="text" placeholder="Color" id="card-style" />
+      <button id="btn-id" onclick="setCard()">Click on Me</button>
+    </div>
     <main>
-        <section><span>A</span><span>♦</span><span>A</span></section>
-        <section><span>A</span><span>♣</span><span>A</span></section>
-        <section><span>A</span><span>♥</span><span>A</span></section>
-        <section><span>A</span><span>♠</span><span>A</span></section>
+      <section id="diamonds">
+        <span>A</span>
+        <span>♦</span>
+        <span>"diamonds"</span>
+        <span>A</span>
+      </section>
+      <section id="clubs">
+        <span>A</span>
+        <span>♣</span>
+        <span>"clubs"</span>
+        <span>A</span>
+      </section>
+      <section id="hearts">
+        <span>A</span>
+        <span>♥</span>
+        <span>"hearts"</span>
+        <span>A</span>
+      </section>
+      <section id="spades">
+        <span>A</span>
+        <span>♠</span>
+        <span>"spades"</span>
+        <span>A</span>
+      </section>
     </main>
-</body>
+    <footer>
+      <button id="reset" onclick="reset()">Reset Everything!</button>
+    </footer>
+  </body>
 </html>
